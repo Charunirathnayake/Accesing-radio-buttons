@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GetElementByTheRadio</title>
+	<script type="text/javascript">
+		function fn1() {
+			// body...
+			var rad1 = document.getElementById("rad1");
+		    var rad2 = document.getElementById("rad2");
+		if (rad1.checked==true) {
+			alert("The student selected subject is"+rad1.value);}
+			else if(rad2.checked==true){
+				alert("The student selected subject is"+rad2.value);
+			}
+		else{
+			alert("please check again");
+		}
+		}
+		
+
+	</script>
+</head>
+<body>
+<input id="rad1" type="radio" name="grp1" value="Mathematics">Mathematics</input>
+<br>
+<input id="rad2" type="radio" name="grp1" value="Science">Science</input>
+<br>
+<BUTTON  onclick="fn1()" id="btn1">Click me</BUTTON>
+</body>
+</html>
